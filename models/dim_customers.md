@@ -1,5 +1,5 @@
-{% docs customers %}
-This is the customers model.
+{% docs dim_customers %}
+This is the dim_customers model.
 Here is a [link](google.com)
 * and a bullet point
 
