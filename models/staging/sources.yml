@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    schema: jaffle_shop
+    database: raw
+    loader: stitch
+    tables:
+      - name: customers
+        columns:
+          - name: id
+            tests:
+              - not_null
+              - unique
+      - name: orders
+
+  - name: stripe
+    schema: stripe
+    database: raw
+    tables:
+      - name: payment
